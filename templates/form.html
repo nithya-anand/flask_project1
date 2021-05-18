@@ -3,8 +3,13 @@
     <!-- <title>Document</title> -->
 </head>
 <body>
-    <form>
-        <input type='text'>
-    </form>>
+    <form action="{{ url_for('predict')}}" method="post">     
+        <input type='text' name='exp' placeholder="Experience" required='required'>
+        <input type='text' name='name' placeholder="name" required='required'>
+        <input type='email' name='mail' placeholder="mail" required='required'>
+        <input type='number' name='phone_number' placeholder="phone" required='required'>
+    
+        <button type="submit">submit the form</button>
+    </form>
 </body>
 </html>
